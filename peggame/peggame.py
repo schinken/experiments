@@ -1,6 +1,10 @@
 __author__ = 'schinken'
 
-# example peg game
+# Peg Game Solver
+# description: https://en.wikipedia.org/wiki/Peg_solitaire
+#
+# Example Game:
+#
 #       1
 #      2 3
 #     4 5 6
