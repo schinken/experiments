@@ -65,4 +65,4 @@ def main( runs=1000 ):
     print statistics
 
 if __name__ == "__main__":
-    main( 10000 )
+    main( 1000000 )
