@@ -27,16 +27,11 @@ rock_paper_scissor_well = {
 # BIG BANG THEORY - ROCK PAPER SCISSOR LIZARD SPOCK
 
 rock_paper_scissor_lizard_spock = {
-    SCISSOR: ( PAPER ),         # Scissors cut paper
-    PAPER  : ( ROCK ),          # Paper covers rock
-    ROCK   : ( LIZARD ),        # Rock crushes lizard
-    LIZARD : ( SPOCK ),         # Lizard poisons Spock
-    SPOCK  : ( SCISSOR ),       # Spock smashes scissors
-    SCISSOR: ( LIZARD ),        # Scissors decapitate lizard
-    LIZARD : ( PAPER ),         # Lizard eats paper
-    PAPER  : ( SPOCK ),         # Paper disproves Spock
-    SPOCK  : ( ROCK ),          # Spock vaporizes rock
-    ROCK   : ( SCISSOR )        # Rock crushes scissors
+    SCISSOR: ( PAPER,   LIZARD  ), # Scissors cut paper,     Scissors decapitate lizard
+    PAPER  : ( ROCK,    SPOCK   ), # Paper covers rock,      Paper disproves Spock
+    ROCK   : ( LIZARD,  SCISSOR ), # Rock crushes lizard,    Rock crushes scissors
+    LIZARD : ( SPOCK,   PAPER   ), # Lizard poisons Spock,   Lizard eats paper
+    SPOCK  : ( SCISSOR, ROCK    ), # Spock smashes scissors, Spock vaporizes rock
 }
 
 class Fight:
