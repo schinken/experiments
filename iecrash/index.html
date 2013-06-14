@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <style>
+        .trwurst {
+            width: 200px;
+            height: 40px;
+            border: 1px solid red;
+            border-radius: 4px;
+
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f5ed', endColorstr='#e8e5db',GradientType=0 );
+        }
+        .trwurst:first-letter {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+  <pre>
+  This document crashes on IE8 and IE9 because of the combination of the gradient filter: attribute and first-letter{ text-transform: uppercase; }
+  </pre>
+    <div class="trwurst">sausage</div>
+</body>
+</html>
